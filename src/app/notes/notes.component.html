@@ -2,16 +2,14 @@
 
 
 <ul class="notes">
-  <li *ngFor="let note of notes"
-    [class.selected]="note === selectedNote"
-    (click)="onSelect(note)">
+  <li *ngFor="let note of notes">
+     <a routerLink="/detail/{{note.id}}">
     <span class="badge">{{note.id}}</span> {{note.name}}
+    </a>
   </li>
 </ul>
 
 
-
-<app-note-detail [note]="selectedNote"></app-note-detail>
 
 
 

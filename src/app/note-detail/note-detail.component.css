@@ -22,6 +22,12 @@ h2, h3 {
     clear: both;
 }
 
+button
+{
+
+ background-color: #EEE;
+}
+
 
 .forms
 {
@@ -31,7 +37,24 @@ h2, h3 {
   list-style-type: none;
   padding: 0;
   width: 15em;
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+
 }
+
+ input, textarea, i  {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: #DDD;
+     vertical-align: top;
+     font-family: Arial, Helvetica, sans-serif
+     text-colo
+}
+
 
 aside
 {
@@ -44,7 +67,7 @@ aside
 body {
   margin: 2em;
 }
-body, input[text], button {
+body, button {
   color: #888;
   font-family: Cambria, Georgia;
 }
@@ -53,9 +76,6 @@ body, input[text], button {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-textarea {
-  vertical-align: top;
-}
 
 /* HeroesComponent's private CSS styles */
 .selected {
