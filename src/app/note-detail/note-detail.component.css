@@ -1,0 +1,107 @@
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2, h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.forms
+{
+  position: relative;
+  top: -3px;
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+
+aside
+{
+  margin-left: 300px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+
+body {
+  margin: 2em;
+}
+body, input[text], button {
+  color: #888;
+  font-family: Cambria, Georgia;
+}
+/* everywhere else */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea {
+  vertical-align: top;
+}
+
+/* HeroesComponent's private CSS styles */
+.selected {
+  background-color: #CFD8DC !important;
+  color: white;
+}
+.notes {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+.notes li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+.notes li.selected:hover {
+  background-color: #BBD8DC !important;
+  color: white;
+}
+.notes li:hover {
+  color: #607D8B;
+  background-color: #DDD;
+  left: .1em;
+}
+.notes .text {
+  position: relative;
+  top: -3px;
+}
+.notes .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #607D8B;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
