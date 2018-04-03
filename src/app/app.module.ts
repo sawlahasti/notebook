@@ -12,6 +12,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { ArticlesComponent } from './articles/articles.component';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
+import { NoteSearchComponent } from './note-search/note-search.component';
 
 
 
@@ -22,6 +23,7 @@ import { InMemoryDataService }  from './in-memory-data.service';
     NoteDetailComponent,
     MessagesComponent,
     ArticlesComponent,
+    NoteSearchComponent,
 
    
   ],

@@ -5,8 +5,8 @@ import { ArticlesComponent }   from './articles/articles.component';
 import { NoteDetailComponent }  from './note-detail/note-detail.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/articles', pathMatch: 'full' },
-   { path: 'articles', component: ArticlesComponent },
+  { path: '', component: ArticlesComponent },
+  //{ path: 'articles', component: ArticlesComponent },
   { path: 'notes', component: NotesComponent }, 
   { path: 'detail/:id', component: NoteDetailComponent },
  

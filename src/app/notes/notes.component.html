@@ -1,11 +1,32 @@
 <h2>My Notes</h2>
 
+ <div>
+  <label>Note name:
+    <input #noteName />
+  </label>
+  <button (click)="addname(noteName.value); noteName.value=''">
+    add
+  </button>
+</div>
+
+
+<div>
+  <label>Description:
+    <input #noteDes/>
+  </label>
+  <button (click)="adddes(noteDes.value); noteDes.value=''">
+    add
+  </button>
+</div>
+
 
 <ul class="notes">
   <li *ngFor="let note of notes">
      <a routerLink="/detail/{{note.id}}">
     <span class="badge">{{note.id}}</span> {{note.name}}
     </a>
+    <button class="delete" title="delete note"
+   (click)="delete(note)">x</button>
   </li>
 </ul>
 
